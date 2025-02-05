@@ -18,7 +18,7 @@
       </div>
     </header>
 
-    <section class="container mx-auto px-6 py-10">
+<section class="container mx-auto px-6 py-10">
       <h2 class="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <section class="bg-gray-100 py-10">
+  <section class="bg-gray-100 py-10">
       <div class="container mx-auto px-6">
         <h3 class="text-3xl font-bold text-gray-800 mb-4">Skills</h3>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <section class="py-10">
+   <section class="py-10">
       <div class="container mx-auto px-6">
         <h3 class="text-3xl font-bold text-gray-800 mb-4">My Philosophy</h3>
         <p class="text-gray-700 text-lg">
@@ -62,7 +62,7 @@
       </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-6">
+  <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto px-6 text-center">
         <p>&copy; 2025 Irfan Alinazri. All rights reserved.</p>
       </div>
