@@ -4,14 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me - Irfan Alinazri</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2o33r5m14JWpHJph8HU6/3vl89v5k51FJg5Cef+xVSTCwq1rI5D07D4Myhht5Jp6Iw3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       body {
         font-family: 'Inter', sans-serif;
       }
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(135deg, #1f2937, #3b82f6);
+      }
     </style>
   </head>
   <body class="bg-gray-50 font-sans leading-normal tracking-normal">
+    <div id="particles-js"></div>
     <header class="bg-gray-800 text-white py-4">
       <div class="container mx-auto px-6 flex justify-between items-center">
         <h1 class="text-2xl font-bold">Irfan Alinazri</h1>
@@ -55,7 +66,7 @@
       </div>
     </section>
 
-  <section class="py-10">
+   <section class="py-10">
       <div class="container mx-auto px-6">
         <h3 class="text-3xl font-bold text-gray-800 mb-4">My Philosophy</h3>
         <p class="text-gray-700 text-lg mb-6">
@@ -70,7 +81,7 @@
       </div>
     </section>
 
-   <footer class="bg-gray-800 text-white py-6">
+  <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto px-6 text-center">
         <p>&copy; 2025 Irfan Alinazri. All rights reserved.</p>
         <p class="mt-2">
@@ -80,7 +91,12 @@
       </div>
     </footer>
 
-   <script>
+  <script>
+      // Initialize Particles.js
+      particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json', function() {
+        console.log('Particles.js configuration loaded.');
+      });
+
       // Dark Mode Toggle
       function toggleTheme() {
         document.body.classList.toggle('bg-gray-900');
