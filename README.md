@@ -1,114 +1,235 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - Irfan Alinazri</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnH2N2o33r5m14JWpHJph8HU6/3vl89v5k51FJg5Cef+xVSTCwq1rI5D07D4Myhht5Jp6Iw3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
+      html {
+        box-sizing: border-box;
+        font-size: 16px;
       }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: white;
+        background: #1a1a1a;
+      }
+
       #particles-js {
         position: fixed;
         width: 100%;
         height: 100%;
-        top: 0;
-        left: 0;
         z-index: -1;
-        background: linear-gradient(135deg, #1f2937, #3b82f6);
+      }
+
+      header {
+        background-color: rgba(20, 31, 31, 0.9);
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+
+      header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+
+      header nav ul li a:hover {
+        color: #f39c12;
+      }
+
+      .hero {
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+        position: relative;
+      }
+
+      .section {
+        padding: 50px 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .project-link {
+        display: block;
+        text-decoration: none;
+        transition: transform 0.3s;
+      }
+
+      .project-link:hover {
+        transform: scale(1.1);
+      }
+
+      .portfolio img {
+        width: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      footer {
+        background-color: rgba(31, 31, 31, 0.9);
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 0.9em;
+        position: relative;
       }
     </style>
   </head>
-  <body class="bg-gray-50 font-sans leading-normal tracking-normal">
+  <body>
     <div id="particles-js"></div>
-    <header class="bg-gray-800 text-white py-4">
-      <div class="container mx-auto px-6 flex justify-between items-center">
-        <h1 class="text-2xl font-bold">Irfan Alinazri</h1>
-        <nav>
-          <a href="index.html" class="text-white hover:text-gray-300 px-3">Home</a>
-          <a href="projects.html" class="text-white hover:text-gray-300 px-3">Projects</a>
-          <a href="contact.html" class="text-white hover:text-gray-300 px-3">Contact</a>
-        </nav>
-      </div>
+
+  <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-   <section class="container mx-auto px-6 py-10">
-      <h2 class="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <p class="text-gray-700 text-lg mb-4">
-            Hello! I’m Irfan Ali Nazri, a versatile professional with expertise in Islamic Studies, Applied Physics, tutoring, sales analysis, and design. I enjoy exploring the intersection of technology, education, and creativity.
-          </p>
-          <p class="text-gray-700 text-lg mb-4">
-            I’m passionate on solving problems, building meaningful connections, and contributing to impactful projects. As a neurodivergent learner, I excel in practical, analytical thinking and leveraging innovative methods to stay engaged in my learning and work.
-          </p>
-          <button onclick="toggleTheme()" class="bg-gray-800 text-white py-2 px-4 mt-4 rounded shadow">Toggle Dark Mode</button>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/400x300" alt="Irfan Alinazri Profile Picture" class="rounded-lg shadow-lg" />
-        </div>
+   <section class="hero">
+      <h1>Irfan Ali Portfolio</h1>
+      <p>Showcasing my passion for physics and coding</p>
+    </section>
+
+  <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Irfan Ali, a versatile in artificial intelligence,
+        technology, and problem-solving. Passionate about crafting innovative
+        solutions and creating impactful projects.
+      </p>
+    </section>
+
+   <section class="section" id="projects">
+      <h2>My Projects</h2>
+      <div class="portfolio">
+        <a href="https://www.linkedin.com/feed/" class="project-link">
+          <img src="https://cdn.glitch.global/5c431103-fdca-4afe-a020-4e5645f34df1/Screenshot%202025-01-22%20at%201.56.04%E2%80%AFAM.png?v=1737482203496project1.jpg" alt="Project 1" />
+        </a>
+        <a href="project2-details.html" class="project-link">
+          <img src="project2.jpg" alt="Project 2" />
+        </a>
+        <a href="project3-details.html" class="project-link">
+          <img src="project3.jpg" alt="Project 3" />
+        </a>
+        <a href="project4-details.html" class="project-link">
+          <img src="project4.jpg" alt="Project 4" />
+        </a>
       </div>
     </section>
 
-   <section class="bg-gray-100 py-10">
-      <div class="container mx-auto px-6">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Skills</h3>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <span class="bg-white p-4 rounded shadow">Physics Tutoring</span>
-          <span class="bg-white p-4 rounded shadow">Arabic Transcription</span>
-          <span class="bg-white p-4 rounded shadow">Sales Analysis</span>
-          <span class="bg-white p-4 rounded shadow">Power BI</span>
-          <span class="bg-white p-4 rounded shadow">Excel Analysis</span>
-          <span class="bg-white p-4 rounded shadow">Fusion 360</span>
-        </div>
-      </div>
+  <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        If you'd like to work together or have any questions, feel free to reach
+        out!
+      </p>
+      <p>
+        Email:
+        <a href="mailto:irfanalinazri4@gmail.com" style="color: #f39c12"
+          >irfanalinazri4@gmail.com</a
+        >
+      </p>
+      <p>
+        Phone: <a href="https://wa.me/601154095214" style="color: #f39c12">+601154095214</a>
+      </p>
     </section>
 
-   <section class="py-10">
-      <div class="container mx-auto px-6">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">My Philosophy</h3>
-        <p class="text-gray-700 text-lg mb-6">
-          I believe in continuous learning and adaptability. By combining my interests in strategy, upskilling, and motivation, I aim to deliver creative solutions and impactful results.
-        </p>
-        <form id="subscribeForm" class="bg-white p-6 rounded shadow-md">
-          <label for="email" class="block text-gray-700 font-bold mb-2">Subscribe to Updates:</label>
-          <input type="email" id="email" name="email" class="w-full p-2 border rounded mb-4" placeholder="Enter your email..." required />
-          <button type="submit" class="bg-gray-800 text-white py-2 px-4 rounded">Subscribe</button>
-        </form>
-        <div id="formResponse" class="mt-4"></div>
-      </div>
-    </section>
-
-  <footer class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto px-6 text-center">
-        <p>&copy; 2025 Irfan Ali Nazri. All rights reserved.</p>
-        <p class="mt-2">
-          <a href="https://github.com" target="_blank" class="text-gray-300 hover:text-white mx-2"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com" target="_blank" class="text-gray-300 hover:text-white mx-2"><i class="fab fa-linkedin"></i></a>
-        </p>
-      </div>
+    <footer>
+      <p>&copy; Irfan Ali Nazri. All Rights Reserved.</p>
     </footer>
 
-  <script>
-      // Initialize Particles.js
-      particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json', function() {
-        console.log('Particles.js configuration loaded.');
-      });
-
-      // Dark Mode Toggle
-      function toggleTheme() {
-        document.body.classList.toggle('bg-gray-900');
-        document.body.classList.toggle('text-white');
-      }
-
-      // Form Submission Handling
-      document.getElementById('Form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-        document.getElementById('formResponse').innerText = `Thank you, ${email}!`;
-      });
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS('particles-js',
+        {
+          particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#ffffff" },
+            shape: {
+              type: "circle",
+              stroke: { width: 0, color: "#000000" },
+              polygon: { nb_sides: 5 }
+            },
+            opacity: {
+              value: 0.5,
+              random: false,
+              anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+            },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#ffffff",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {
+              enable: true,
+              speed: 6,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: { enable: false, rotateX: 600, rotateY: 1200 }
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "repulse" },
+              onclick: { enable: true, mode: "push" },
+              resize: true
+            },
+            modes: {
+              grab: { distance: 400, line_linked: { opacity: 1 } },
+              bubble: { distance: 400, size: 40, duration: 2, opacity: 8 },
+              repulse: { distance: 200, duration: 0.4 },
+              push: { particles_nb: 4 },
+              remove: { particles_nb: 2 }
+            }
+          },
+          retina_detect: true
+        }
+      );
     </script>
   </body>
 </html>
