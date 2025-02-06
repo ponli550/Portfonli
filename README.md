@@ -39,10 +39,10 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <p class="text-gray-700 text-lg mb-4">
-            Hello! I’m Irfan Alinazri, a versatile professional with expertise in Islamic Studies, Applied Physics, tutoring, sales analysis, and design. I enjoy exploring the intersection of technology, education, and creativity.
+            Hello! I’m Irfan Ali Nazri, a versatile professional with expertise in Islamic Studies, Applied Physics, tutoring, sales analysis, and design. I enjoy exploring the intersection of technology, education, and creativity.
           </p>
           <p class="text-gray-700 text-lg mb-4">
-            I’m passionate about solving problems, building meaningful connections, and contributing to impactful projects. As a neurodivergent learner, I excel in practical, analytical thinking and leveraging innovative methods to stay engaged in my learning and work.
+            I’m passionate on solving problems, building meaningful connections, and contributing to impactful projects. As a neurodivergent learner, I excel in practical, analytical thinking and leveraging innovative methods to stay engaged in my learning and work.
           </p>
           <button onclick="toggleTheme()" class="bg-gray-800 text-white py-2 px-4 mt-4 rounded shadow">Toggle Dark Mode</button>
         </div>
@@ -83,7 +83,7 @@
 
   <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto px-6 text-center">
-        <p>&copy; 2025 Irfan Alinazri. All rights reserved.</p>
+        <p>&copy; 2025 Irfan Ali Nazri. All rights reserved.</p>
         <p class="mt-2">
           <a href="https://github.com" target="_blank" class="text-gray-300 hover:text-white mx-2"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com" target="_blank" class="text-gray-300 hover:text-white mx-2"><i class="fab fa-linkedin"></i></a>
@@ -104,10 +104,10 @@
       }
 
       // Form Submission Handling
-      document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+      document.getElementById('Form').addEventListener('submit', function (event) {
         event.preventDefault();
         const email = document.getElementById('email').value;
-        document.getElementById('formResponse').innerText = `Thank you for subscribing, ${email}!`;
+        document.getElementById('formResponse').innerText = `Thank you, ${email}!`;
       });
     </script>
   </body>
